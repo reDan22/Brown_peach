@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Коричневый Персик | Селективная парфюмерия в Нижнем Новгороде</title>
+    <style>
+        :root {
+            --peach: #ffcb9a;
+            --brown: #5d4037;
+            --cream: #fff9f0;
+            --accent: #8d6e63;
+        }
+
+        body {
+            font-family: 'Playfair Display', serif, Arial;
+            margin: 0;
+            background-color: var(--cream);
+            color: var(--brown);
+        }
+
+        header {
+            background-color: white;
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 1px solid var(--peach);
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--brown);
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        .hero {
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                        url('https://images.unsplash.com/photo-1541604193435-225878996233?auto=format&fit=crop&q=80&w=1000');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+
+        .catalog {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .item:hover {
+            transform: translateY(-5px);
+        }
+
+        .item img {
+            max-width: 100%;
+            height: 200px;
+            object-fit: contain;
+        }
+
+        .price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--accent);
+        }
+
+        footer {
+            background-color: var(--brown);
+            color: var(--peach);
+            padding: 3rem 1rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .btn {
+            background-color: var(--brown);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Коричневый Персик</div>
+    <nav>
+        <a href="#">Ароматы</a>
+        <a href="#">Новинки</a>
+        <a href="#">О нас</a>
+        <a href="#">Контакты</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>Искусство редких нот</h1>
+        <p>Ваш идеальный шлейф в самом сердце Нижнего Новгорода</p>
+    </div>
+</section>
+
+<div class="container">
+    <h2>Бестселлеры</h2>
+    <div class="catalog">
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&q=80&w=300" alt="Парфюм">
+            <h3>Velvet Peach</h3>
+            <p>Дымный персик, амбра, кедр</p>
+            <p class="price">8 500 ₽</p>
+            <button class="btn">В корзину</button>
+        </div>
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1557170334-a7c3a4f22030?auto=format&fit=crop&q=80&w=300" alt="Парфюм">
+            <h3>Brown Wood</h3>
+            <p>Уд, кожа, жареный миндаль</p>
+            <p class="price">12 200 ₽</p>
+            <button class="btn">В корзину</button>
+        </div>
+        <div class="item">
+            <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&q=80&w=300" alt="Парфюм">
+            <h3>Nizhny Sunset</h3>
+            <p>Пряный шафран, роза, мускус</p>
+            <p class="price">9 800 ₽</p>
+            <button class="btn">В корзину</button>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>г. Нижний Новгород, ул. Большая Покровская, 12</p>
+    <p>Ежедневно с 10:00 до 21:00</p>
+    <p>&copy; 2026 Парфюмерный дом «Коричневый Персик»</p>
+</footer>
+
+</body>
+</html>
